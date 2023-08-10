@@ -144,7 +144,7 @@ export default class App {
 
   _initFloor() {
     const geo = new SphereGeometry(1);
-    const map = TL.load('/floor/bark/Material_2074.jpg');
+    const map = TL.load('/floor/bark/Bark_007_BaseColor.jpg');
     const aoMap = TL.load('/floor/bark/Bark_007_AmbientOcclusion.jpg');
     const roughnessMap = TL.load('/floor/bark/Bark_007_Roughness.jpg');
     const normalMap = TL.load('/floor/bark/Bark_007_Normal.jpg');
