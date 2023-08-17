@@ -12,6 +12,7 @@ import {
   Vector2,
   CameraHelper,
   PCFSoftShadowMap,
+  ACESFilmicToneMapping,
 } from 'three';
 
 import  Stats from 'three/examples/jsm/libs/stats.module.js';
@@ -52,6 +53,7 @@ export default class App {
     });
     this._renderer.shadowMap.enabled = true;
     this._renderer.shadowMap.type = PCFSoftShadowMap;
+    this._renderer.toneMapping = ACESFilmicToneMapping;
     this._renderer.setSize(window.innerWidth, window.innerHeight);
 
     const aspect = window.innerWidth / window.innerHeight;
